@@ -12,6 +12,8 @@ public class DisplayMyNameTest {
     @DisplayName("Display My Name Test")
     public void testDisplayMyName() {
         String expectedName = "201935032 김태엽";
-        assert displayMyName.getName().equals(expectedName);
+        String actualName = displayMyName.getName();
+        System.out.println("Displayed Name: " + actualName);
+        assert actualName.equals(expectedName);
     }
 }
